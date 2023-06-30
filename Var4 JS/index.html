@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример HTML документа</title>
+  <style>
+    .styled {
+      color: red;
+      background-color: blue;
+      font-family: Arial;
+      border: 1px solid green;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Вывод информации о заголовке документа через 2 секунды
+      setTimeout(function() {
+        var pageTitle = document.title;
+        console.log("Заголовок документа:", pageTitle);
+      }, 2000);
+      
+      // Создание и вставка нового элемента при щелчке по нему
+      var birthDateElement = document.createElement('div');
+      birthDateElement.textContent = 'Дата рождения: 08.07.2004';
+      birthDateElement.addEventListener('click', function() {
+        var element1 = document.querySelector('div:nth-child(1)');
+        element1.insertAdjacentElement('afterend', birthDateElement);
+      });
+      
+      // Добавление созданного элемента в документ
+      document.body.appendChild(birthDateElement);
+      
+      // Применение стилей к элементу №1
+      var element1 = document.querySelector('div:nth-child(1)');
+      element1.addEventListener('click', function() {
+        element1.classList.add('styled');
+      });
+      
+      // Получение информации об операционной системе и браузере пользователя
+      var os = window.navigator.platform;
+      var browser = window.navigator.userAgent;
+      var userInfo = "ОС: " + os + "\nБраузер: " + browser;
+      
+      // Отображение информации в новом окне
+      setTimeout(function() {
+        var infoWindow = window.open("", "_blank", "width=400,height=300");
+        infoWindow.document.write("<pre>" + userInfo + "</pre>");
+        
+        // Закрытие окна через 5 секунд
+        setTimeout(function() {
+          infoWindow.close();
+        }, 5000);
+      }, 2000);
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <h1>Белко Тома Михайловна</h1>
+  </div>
+  <img src="img.jpg" alt="Описание изображения">
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="toma.css">  
+  <meta charset="UTF-8" />
+	<title>сайт</title>
+</head>
+<body>
+  
+  <header> 
+         
+    <img src="photo_2023-03-29_19-50-58.jpg" alt="" class="logo-holder">
+    <img src="images/icon/menu.png" class="gam-menu">
+    
+      <ul class="menu">
+       <li type="none" class="chosen-item">Главная </li>
+       <li type="none">Покупателям</li>
+       <li type="none">помощь</li> 
+       <li type="none">о компании</li>
+   </ul> 
+     
+</header> 
+
+<main>
+<div class="main-block">
+
+</div>
+
+<div class="grid-container">
+  <div class="block">Блок 1</div>
+  <div class="block">Блок 2</div>
+  <div class="block">Блок 3</div>
+  <div class="block">Блок 4</div>
+</div>
+
+<div class="grid-container-2">
+    <div class="block-2">Блок 5</div>
+    <div class="block-2">Блок 6</div>
+    <div class="block-2">Блок 7</div>
+</div>
+
+</main>
+  
+<footer>
+  Контакты для связи
+  </footer>  
+</body>
+  

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">   
+    <head>  
+        <meta charset="UTF-8">
+        <title>Поздравление с 23 февраля</title>
+          
+    </head>
+
+    <Body>
+    <h1 style="font-size: 26px; font-family: Times New Roman; text-align: center;">23 февраля</h1>
+    <p>Поздравляем с Днём защитника Отечетства!</p>
+    <p>Добрых слов так много хотим сказать:</p>
+    <ul>
+        <li>Мира</li>
+        <li>Здоровья</li>
+        <li>Благополучия</li>
+    </ul>
+        <img alt="otkritka" src="otkritka3.jpg" style="width: 800px; height: 350px; margin: 0px 20px 0px 10px">
+        
+<a href="http://ggpk.by/">ГГПК</a>

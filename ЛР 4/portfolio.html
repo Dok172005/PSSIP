@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">   
+    <head>  
+        <meta charset="UTF-8">
+        <title>Портфолио</title>
+        <link rel="stylesheet" href="portfolio.css">
+          
+    </head>
+
+    <Body>
+    <h1 style="font-size: 26px; font-family: Courier New; text-align: center; color: white;">Моё резюме</h1>
+    
+    <div style="display: flex; flex-direction: row;  ">
+        <img alt="Me" src="Me.jpg" style="width: 400px; height: 400px; margin: 0px 20px 0px 10px; border-radius: 50px;">  
+        
+         <div style="display: flex; flex-direction: column;">
+            <h1 style="font-size: 26px; font-family: Courier New; text-align: center; display: flex; flex-direction: column; color: white;">Привет!</h1>
+            <p style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Меня зовут Тома. Мне 17 лет. Учусь я уже как на 3 курсе, в группе ПЗТ-35, Гродненского государственного политехнического колледжа. Родилась и живу я в городе Гродно. В свободное время я играю в компьютерные игры, иногда на консоли. Также в свободное от учёбы время я смотрю сериалы, видео ролики на ютубе и фильмы.</p>
+         <p style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Мои увлечения</p>
+         <ul style="font-size: 14px; font-family: Courier New, cursive;text-align: left; color: white;">
+            <li>Рисование</li>
+            <li>Сериалы</li>
+            <li>Игры</li>
+            <li>Игра на гитаре</li>
+        </ul>
+        <p style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Мои предпочтения в еде</p>
+        <ul style="font-size: 14px; font-family: Courier New, cursive;text-align: left; color: white;">
+            <li>Жареные пельмешки</li>
+            <li>Пицца</li>
+            <li>Шаурма</li>
+            <li>Хачапури</li>
+         </ul>
+         <p style="font-size: 14px; font-family: Courier New, cursive; text-align: justify ; display: flex; color: white;">Иногда мы с семьёй путешествуем, так мы можем как-то отдохнуть от будней рутины. Из увлечений у меня не только фильмы/сериалы, рисование и игры, но также я планирую обучиться игре на гитаре, дабы разнообразить свой досуг. </p>
+        </div>
+    </div>
+    
+    <!-- див для видео и аудио-->
+<div style="display: flex; flex-direction: row; justify-content: space-around;">
+    <div style="display: flex; flex-direction: column; align-items: center; font-family: 'Courier New, cursive';">
+        <h1 class="moon">Мои любимые треки:</h1>
+        <p style="color: white;"><i>Mummy Dust</i></p>
+        <audio src="Ghost_-_Mummy_Dust_(musmore.com).mp3" controls>Cello Theme</audio>
+        <p style="color: white;"><i>Ritual</i></p>
+        <audio src="Ghost_Ritual.mp3" controls></audio>
+        <p style="color: white;"><i>Cirice</i></p>
+        <audio src="Ghost_Cirice.mp3" controls></audio>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; font-family: 'Courier New, cursive';">
+        <h1 style="font-size: 26px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Square Hammer</h1>
+        <video width="640" height="360" src="Ghost_Square_Hammer.mp4" controls>  </video> 
+        
+    </div>
+</div>
+
+<div>
+<table border="1">
+    <tr align="center">
+        <td rowspan="2" class="td">Предметы</td>
+        <td class="td">Тестирование</td>
+        <td class="td">ТКиОК</td>
+        <td class="td">КПиЯП</td>
+   </tr>
+   <tr align="center">
+    <td class="td">7</td>
+    <td class="td">8</td>
+    <td class="td">5</td>
+   </tr>
+   <tr align="center">
+    <td class="td">Заинтерисованность</td>
+    <td class="td">Да</td><td class="td">Да</td><td class="td">Не особо</td>
+   </tr>
+</table>
+</div>
+
+<form class="guruweba_example_form" name="feedback" method="POST" action="/feedback.php">
+  <div class="guruweba_example_caption" class="moon">Обратная связь</div>
+  <div class="guruweba_example_infofield" style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Тема обращения</div>
+  <select name="theme" required="required">
+    <option value=""; class="sun";>Выберите вариант</option>
+    <option class="sun";>Вопрос по работе страницы</option>
+    <option class="sun";>Вопрос о какой-либо песне</option>
+    <option class="sun";>Пожелания / предложения в улучшении страницы</option>
+  </select>
+  <div style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Ваше имя</div>
+  <input type="text" name="name" required="required">
+  <div style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Ваш email</div>
+  <input type="email" name="email" required="required">
+  <div>
+    <p style="font-size: 14px; font-family: Courier New, cursive; text-align: justify; display: flex; color: white;">Сообщение</p>
+    <textarea name="message"></textarea>
+    <input type="submit" name="submit_btn" value="Отправить"><br>
+  </div>
+    <a href = "https://vk.com/biba__boba__17" target="_blank">Мой ВК</a><br>
+    <a href = "https://www.instagram.com/_biba_boba17_/" target="_blank">Мой инстаграм</a><br>
+    <a href="#top">Наверх</a>
+<br>
+</form>
+    </Body>
+</html>
